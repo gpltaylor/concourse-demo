@@ -7,7 +7,6 @@ image_resource:
 
 inputs:
   - name: resource-app
-    path: ./
   - name: resource-scripts
 
     

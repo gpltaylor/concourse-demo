@@ -8,7 +8,7 @@ resources:
   - name: resource-app
     type: git
     source:
-      uri: https://github.com/gpltaylor/concourse-demo.git
+      uri: https://github.com/gpltaylor/react-router-workshop.git
       branch: master
 
 
