@@ -18,3 +18,5 @@ fly -t tutorial set-pipeline -p simple-tutorial -c pipeline.yml -n
 fly -t tutorial unpause-pipeline -p simple-tutorial
 fly -t tutorial trigger-job -w -j simple-tutorial/job-test-app
 ```
+
+.
