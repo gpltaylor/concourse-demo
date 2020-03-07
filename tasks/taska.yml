@@ -8,9 +8,9 @@ image_resource:
 inputs:
   - name: resource-app
     path: ./
-  - name: resource-script
+  - name: resource-scripts
 
     
 run:
   path: /bin/sh
-  args: ["resource-script/taska.sh"]
+  args: ["resource-scripts/taska.sh"]
