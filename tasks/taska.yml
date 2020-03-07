@@ -1,0 +1,16 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: node, tag: 13.10.1-alpine3.10}
+
+inputs:
+  - name: resource-app
+    path: ./
+  - name: resource-script
+
+    
+run:
+  path: /bin/sh
+  args: ["resource-script/taska.sh"]

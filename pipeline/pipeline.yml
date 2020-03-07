@@ -1,0 +1,16 @@
+---
+resources:
+  - name: resource-app
+    type: git
+    source:
+      uri: https://github.com/gpltaylor/concourse-tutorial.git
+      branch: master
+
+jobs:
+  - name: job-test-app
+    public: true
+    plan:
+      - get: resource-app
+        trigger: true
+      - task: web-app-tests
+        file: resource-app/run-tests.yml
